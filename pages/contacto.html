@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="../img/LogoRos.png" />
-    <title>Contacto</title>
-  </head>
-  <body>
-  <!-- Navbar -->
+
+<head>
+  <!-- 1. Metadatos y enlaces a estilos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="icon" href="../img/LogoRos.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <!-- 2. Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">  <img src="../imagen/estre.ico" alt="logo" style="width: 30px; height: 30px; margin-right: 10px;">Gamificando en Moodle</a>
+      <a class="navbar-brand" href="../index.html">
+        <img src="../imagen/estre.ico" alt="logo" style="width: 30px; height: 30px; margin-right: 10px;">Gamificando en Moodle
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,95 +39,103 @@
       </div>
     </div>
   </nav>
-    </header>
-    <main>
-      <div class="main_ofrecemos">
-        <br>
-       
-        <div class="card">
-          <div class="card-header">
-            ¿Qué Ofrecemos?
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">una atención personalizada a la hora de planificar los cursos en aula virtual, adaptados al nivel de enseñanza con diferentes metodologías.</h5>
-            <br>
-            <p class="card-text">Esto puede incluir plantillas pre armadas de aula virtual o crear plantillas adaptadas a la institución educativa. Podemos diseñar y fabricar entornos de aprendizajes completamente a medida.</p>
-          </div>
+
+  <!-- 3. Sección de "Qué Ofrecemos" -->
+  <main>
+    <div class="main_ofrecemos">
+      <br>
+      <div class="card">
+        <div class="card-header">
+          ¿Qué Ofrecemos?
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Una atención personalizada a la hora de planificar los cursos en aula virtual, adaptados al nivel de enseñanza con diferentes metodologías.</h5>
+          <br>
+          <p class="card-text">Esto puede incluir plantillas pre armadas de aula virtual o crear plantillas adaptadas a la institución educativa. Podemos diseñar y fabricar entornos de aprendizajes completamente a medida.</p>
         </div>
       </div>
-      
-      <div class="container">
-        <h1>Formulario de contacto</h1>
+    </div>
+
+    <!-- 4. Formulario de contacto -->
+    <div class="container">
+      <h1>Formulario de contacto</h1>
       <h4>Déjanos tus datos para que a la brevedad uno de nuestros ejecutivos te otorgue atención personalizada.</h4>
-        <form id="FormularioContacto" onsubmit="return validarFormulario()">
-          <div class="datos">
-            <label for="nombre" class="form-label">Nombre completo:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-            <span class="error" id="errorNombre"></span>
-          </div>
-          <div class="datos">
-            <label for="email" class="form-label">Correo electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-            <span class="error" id="errorEmail"></span>
-          </div>
-          <div class="datos">
-            <label for="asunto" class="form-label">Asunto:</label>
-            <select class="form-select" id="asunto" name="asunto" required>
-              <option value="">Seleccione una opción</option>
-              <option value="consulta">Consulta</option>
-              <option value="sugerencia">Sugerencia</option>
-              <option value="reclamo">Reclamo</option>
-            </select>
-            <span class="error" id="errorAsunto"></span>
-          </div>
-          <div class="datos">
-            <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
-            <span class="error" id="errorMensaje"></span>
-          </div>
-          <div class="datos">
-            <label for="medioContacto" class="form-label">Medio de contacto preferido:</label>
-            <div class="form-check">
-              <input type="radio" class="form-check-input" id="medioContacto" name="medioContacto" value="medioContacto" required>
-              <label class="form-check-label" for="medioContacto">Instagram</label>
-            </div>
-            <div class="form-check">
-              <input type="radio" class="form-check-input" id="correoElectronico" name="medioContacto" value="correoElectronico" required>
-              <label class="form-check-label" for="correoElectronico">Correo electrónico</label>
-            </div>
-            <span class="error" id="errorMedioContacto"></span>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar formulario</button>
-        </form>
-        <div class="mapa text-center">
-          <p>Horarios de atención: de 9 a 18 hs.
-            <br />
-            Casa del Futuro | (CP5501) | MENDOZA
-            <br />
-          </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2808483593317!2d-68.8211128253106!3d-32.943593771732694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b6d2f7e375f%3A0x819b3cf57de15f9a!2sCasa%20del%20Futuro%2C%20Godoy%20Cruz!5e0!3m2!1ses-419!2sar!4v1741048002504!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form id="FormularioContacto" onsubmit="return validarFormulario()">
+        <div class="datos">
+          <label for="nombre" class="form-label">Nombre completo:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <span class="error" id="errorNombre"></span>
         </div>
+        <div class="datos">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <span class="error" id="errorEmail"></span>
+        </div>
+        <div class="datos">
+          <label for="asunto" class="form-label">Asunto:</label>
+          <select class="form-select" id="asunto" name="asunto" required>
+            <option value="">Seleccione una opción</option>
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+          </select>
+          <span class="error" id="errorAsunto"></span>
+        </div>
+        <div class="datos">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+          <span class="error" id="errorMensaje"></span>
+        </div>
+        <div class="datos">
+          <label for="medioContacto" class="form-label">Medio de contacto preferido:</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="medioContacto" name="medioContacto" value="medioContacto" required>
+            <label class="form-check-label" for="medioContacto">Instagram</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="correoElectronico" name="medioContacto" value="correoElectronico" required>
+            <label class="form-check-label" for="correoElectronico">Correo electrónico</label>
+          </div>
+          <span class="error" id="errorMedioContacto"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar formulario</button>
+      </form>
+
+      <!-- 5. Mapa de ubicación -->
+      <div class="mapa text-center">
+        <p>Horarios de atención: de 9 a 18 hs.
+          <br />
+          Casa del Futuro | (CP5501) | MENDOZA
+          <br />
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2808483593317!2d-68.8211128253106!3d-32.943593771732694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b6d2f7e375f%3A0x819b3cf57de15f9a!2sCasa%20del%20Futuro%2C%20Godoy%20Cruz!5e0!3m2!1ses-419!2sar!4v1741048002504!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </main>
-    <footer class="footer bg-primary text-light d-flex flex-column align-items-center p-5 text-center">  
-      <div class="footer_data">
-        <div><i class="fa fa-map-marker"></i> Sarmiento 2291, M5501 Godoy Cruz, Mendoza</div>
-        <div><i class="fa fa-phone"></i> (011) 0800-000-0000</div>
-        <div><i class="fa fa-envelope"></i> infomail@casafuturo.com.ar</div>
-        <div><i class="fa fa-clock-o"></i> Lun. a Vier. de 9 a 18 hs</div>
-      </div>
-      <div class="footer_iconos text-end d-flex">
-        <a href="https://www.instagram.com" target="_blank" class="me-3">
-          <i class="boton-red-social fab fa-instagram text-white"></i>
-        </a>
-        <a href="https://www.youtube.com" target="_blank">
-          <i class="boton-red-social fab fa-youtube text-white"></i>
-        </a>
-      </div>
-    </footer>
-    <script src="/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="footer bg-primary text-light d-flex flex-column align-items-center p-5 text-center">
+    <div class="footer_data">
+      <div><i class="fa fa-map-marker"></i> Sarmiento 2291, M5501 Godoy Cruz, Mendoza</div>
+      <div><i class="fa fa-phone"></i> (011) 0800-000-0000</div>
+      <div><i class="fa fa-envelope"></i> infomail@casafuturo.com.ar</div>
+      <div><i class="fa fa-clock-o"></i> Lun. a Vier. de 9 a 18 hs</div>
+    </div>
+    <div class="footer_iconos text-end d-flex">
+      <a href="https://www.instagram.com" target="_blank" class="me-3">
+        <i class="boton-red-social fab fa-instagram text-white"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <i class="boton-red-social fab fa-youtube text-white"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- 7. Scripts -->
+  <script src="/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
 </html>
 
 
