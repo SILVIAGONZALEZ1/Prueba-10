@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Vollkorn+SC:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+/* Agrega aquí cualquier otro estilo personalizado */
+
+/* Estilos generales para el cuerpo y el HTML */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/* Estilos para las imágenes de fondo */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("/imagen/imagencasa.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("/imagen/imagencasa2.jpg");
+  min-height: 400px;
+}
+
+/* Estilos para las leyendas */
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: rgb(240, 235, 235);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/* Estilos para los encabezados */
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Estilos para las secciones de contenido */
+.content-section {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.content-section.bg-primary {
+  background-color: #3474b4;
+  color: #ddd;
+  padding: 40px 80px;
+}
+
+/* Desactivar el desplazamiento parallax para tablets y teléfonos */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+/* Estilos personalizados para contacto.html */
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.main_ofrecemos {
+  padding: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.datos {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control, .form-select {
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer_logo img {
+  width: 50px;
+}
+
+.footer_data {
+  margin-top: 10px;
+}
+
+.footer_data div {
+  margin-bottom: 5px;
+}
+
+.footer_iconos {
+  margin-top: 10px;
+}
+
+.boton-red-social {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 0 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+  .content-section {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-section {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 20px 30px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .footer_logo img {
+    width: 40px;
+  }
+
+  .boton-red-social {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-section {
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .footer_logo img {
+    width: 30px;
+  }
+
+  .boton-red-social {
+    font-size: 1rem;
+  }
+}
