@@ -25,12 +25,12 @@ body, html {
 }
 
 .bgimg-1 {
-  background-image: url("/images/imagencasa.jpg");
+  background-image: url("../images/imagencasa.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("/images/imagencasa2.jpg");
+  background-image: url("../images/imagencasa2.jpg");
   min-height: 400px;
 }
 
@@ -102,6 +102,7 @@ h3 {
 
 .main_ofrecemos {
   padding: 20px;
+  margin: 20px;
 }
 
 .card-header {
