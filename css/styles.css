@@ -25,9 +25,13 @@ body, html {
 }
 
 .bgimg-1 {
-  background-image: url("../images/imagencasa.jpg");
-  min-height: 100%;
+  background-image: url("../images/imagencasa.jpg"); /* Imagen de fondo */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  min-height: 400px; /* Asegura que el div tenga altura */
 }
+
 
 .bgimg-2 {
   background-image: url("../images/imagencasa2.jpg");
